@@ -1,3 +1,5 @@
+.PHONY: format export_env
+
 format:
 	# remove unused imports
 	autoflake --in-place --remove-all-unused-imports \
@@ -6,3 +8,8 @@ format:
 	isort . --skip lib
 	# format with YAPF
 	yapf -irp . --exclude lib
+
+export_env:
+	echo "Exporting Python environment"
+	conda env export --no-build > environment.yml
+	pip list --exclude-editable --format=freeze > requirements.txt
