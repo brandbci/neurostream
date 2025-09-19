@@ -6,7 +6,7 @@ Ultra-low latency signal processing library for neural data (work in progress)
 
 ## Signal Processing
 
-This section summarizes the standard signal processing steps used on data from microelectrode arrays. For a code example, see [baseline.ipynb](./notebooks/process_nsx.ipynb).
+This section summarizes the standard signal processing steps used on data from microelectrode arrays. For a code example, see [baseline.ipynb](./notebooks/baseline.ipynb).
 
 ### Re-referencing
 
