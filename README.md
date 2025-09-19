@@ -6,6 +6,8 @@ Ultra-low latency signal processing library for neural data (work in progress)
 
 ## Signal Processing
 
+This section summarizes the standard signal processing steps used on data from microelectrode arrays. For a code example, see [baseline.ipynb](./notebooks/process_nsx.ipynb).
+
 ### Re-referencing
 
 The raw data consists of voltage measurements relative to a set of reference electrodes. This data can still have noise that is correlated across channels, so it is often desirable to apply a common-average reference or a linear regression reference. See [re_reference.py](https://github.com/brandbci/brand-nsp/blob/main/nodes/re_reference/re_reference.py) in `brand-nsp` for an example of how this is done.
